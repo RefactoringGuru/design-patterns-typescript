@@ -4,7 +4,7 @@ This repository is part of the [Refactoring.Guru](https://refactoring.guru/desig
 
 It contains TypeScript examples for all classic GoF design patterns. Each pattern includes two examples:
 
-- **Structural** examples show the internal structure of patterns, including detailed comments.
+- **Conceptual** examples show the internal structure of patterns, including detailed comments.
 
 - **RealWorld** examples show how patterns can be used in real-world web applications.
 
