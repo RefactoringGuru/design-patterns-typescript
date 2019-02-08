@@ -1,4 +1,4 @@
-# Design Patterns in TypesScript
+# Design Patterns in TypeScript
 
 This repository is part of the [Refactoring.Guru](https://refactoring.guru/design-patterns) project.
 
