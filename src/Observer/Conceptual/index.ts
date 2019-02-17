@@ -98,7 +98,7 @@ class ConcreteSubject implements Subject {
      */
     public notify(): void {
         console.log('Subject: Notifying observers...');
-        for (let observer of this.observers) {
+        for (const observer of this.observers) {
             observer.update(this);
         }
     }

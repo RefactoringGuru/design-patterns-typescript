@@ -45,7 +45,7 @@ class Originator {
      * метода save перед запуском методов бизнес-логики.
      */
     public doSomething(): void {
-        console.log('Originator: I'm doing something important.');
+        console.log('Originator: I\'m doing something important.');
         this.state = this.generateRandomString(30);
         console.log(`Originator: and my state has changed to: ${this.state}`);
     }
