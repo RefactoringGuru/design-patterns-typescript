@@ -1,0 +1,14 @@
+language: node_js
+node_js: 8
+sudo: false
+
+notifications:
+  email: false
+
+install:
+  - npm install
+
+script:
+  - npm run codestyle:check
+
+after_script:
