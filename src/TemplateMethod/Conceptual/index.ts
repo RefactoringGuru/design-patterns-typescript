@@ -143,5 +143,5 @@ console.log('Same client code can work with different subclasses:');
 clientCode(new ConcreteClass1());
 console.log('');
 
-console.log('Same client code can work with different subclasses:\n');
+console.log('Same client code can work with different subclasses:');
 clientCode(new ConcreteClass2());
