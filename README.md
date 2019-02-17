@@ -8,8 +8,6 @@ It contains TypeScript examples for all classic GoF design patterns. Each patter
 
 - **RealWorld** examples show how patterns can be used in real-world web applications.
 
-**The work is in the very initial stage at the moment.**
-
 ## Requirements
 
 For simplicity reasons, the examples are console apps. In order to launch them, you have to install [Node.js and NPM](https://nodejs.org/en/) on your computer and then install [TypeScript compiler](https://github.com/Microsoft/TypeScript) and [TypeScript Node extension](https://github.com/TypeStrong/ts-node) like this:
@@ -27,7 +25,7 @@ ts-node src/Path-to-example/Example.ts
 
 For the best experience, I recommend working with examples with these IDEs:
 
-- [Webstorm](https://www.jetbrains.com/webstorm/)
+- [WebStorm](https://www.jetbrains.com/webstorm/)
 - [Visual Studio Code](https://code.visualstudio.com/)
 
 
@@ -37,14 +35,14 @@ I appreciate any help, whether it's a simple fix of a typo or a whole new exampl
 
 Here's a style guide which might help you to keep your changes consistent with the rest of the project's code:
 
-1. All code should follow these two guidelines: [Unofficial TypeScript StyleGuide](https://github.com/basarat/typescript-book/blob/master/docs/styleguide/styleguide.md) and [Excel Micro TypeScript Style Guide](https://github.com/excelmicro/typescript).
+1. All code should follow these two guidelines: [Unofficial TypeScript StyleGuide](https://github.com/basarat/typescript-book/blob/master/docs/styleguide/styleguide.md) and [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript).
 
 2. Try to hard wrap the code at 80th's character. It helps to list the code on the website without scrollbars.
 
 3. Example files should be located and named in the following manner:
 
     ```
-    src/{PatternName}/{ExampleName}/{PatternName}{ExampleName}.ts
+    src/{PatternName}/{ExampleName}/index.ts
     ```
 
 4. Aim to put all code within one file. Yes, I realize that it's not how it supposed to be done in production. But it helps people to better understand examples, since all code fits into one screen.
