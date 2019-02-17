@@ -1,0 +1,9 @@
+Straight traversal:
+First
+Second
+Third
+
+Reverse traversal:
+Third
+Second
+First
