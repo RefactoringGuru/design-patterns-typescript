@@ -11,4 +11,3 @@ install:
 script:
   - npm run codestyle:check
 
-after_script:
