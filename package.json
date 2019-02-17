@@ -1,8 +1,7 @@
 {
-  "name": "RefactoringGuru/design-patterns-typescript",
+  "name": "design-patterns-typescript",
   "description": "TypeScript examples for all classic GoF design patterns",
   "author": "Alexander Shvets <neochief@shvetsgroup.com>",
-  "license": "MIT",
   "devDependencies": {
     "tslint": "^5.12.1",
     "typescript": "^3.3.3",
