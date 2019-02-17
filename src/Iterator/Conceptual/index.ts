@@ -37,7 +37,7 @@ interface Iterator<T> {
     rewind(): void;
 }
 
-interface IteratorAggregate {
+interface Aggregator {
     // EN: Retrieve an external iterator.
     //
     // RU: Получить внешний итератор.
@@ -118,7 +118,7 @@ class AlphabeticalOrderIterator implements Iterator<string> {
  * RU: Конкретные Коллекции предоставляют один или несколько методов для
  * получения новых экземпляров итератора, совместимых с классом коллекции.
  */
-class WordsCollection implements IteratorAggregate {
+class WordsCollection implements Aggregator {
     private items: string[] = [];
 
     public getItems(): string[] {

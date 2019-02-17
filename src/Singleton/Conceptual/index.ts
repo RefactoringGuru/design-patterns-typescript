@@ -18,7 +18,7 @@
  * клиентам получить доступ к уникальному экземпляру одиночки.
  */
 class Singleton {
-    private static singleton: Singleton;
+    private static instance: Singleton;
 
     /**
      * EN: The Singleton's constructor should always be private to prevent
@@ -41,11 +41,11 @@ class Singleton {
      * сохраняя повсюду только один экземпляр каждого подкласса.
      */
     public static getInstance(): Singleton {
-        if (!Singleton.singleton) {
-            Singleton.singleton = new Singleton();
+        if (!Singleton.instance) {
+            Singleton.instance = new Singleton();
         }
 
-        return Singleton.singleton;
+        return Singleton.instance;
     }
 
     /**
