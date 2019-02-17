@@ -84,13 +84,13 @@ interface AbstractProductA {
  */
 class ConcreteProductA1 implements AbstractProductA {
     public usefulFunctionA(): string {
-        return "The result of the product A1.";
+        return 'The result of the product A1.';
     }
 }
 
 class ConcreteProductA2 implements AbstractProductA {
     public usefulFunctionA(): string {
-        return "The result of the product A2.";
+        return 'The result of the product A2.';
     }
 }
 
@@ -133,7 +133,7 @@ interface AbstractProductB {
 class ConcreteProductB1 implements AbstractProductB {
 
     public usefulFunctionB(): string {
-        return "The result of the product B1.";
+        return 'The result of the product B1.';
     }
 
     /**
@@ -154,7 +154,7 @@ class ConcreteProductB1 implements AbstractProductB {
 class ConcreteProductB2 implements AbstractProductB {
 
     public usefulFunctionB(): string {
-        return "The result of the product B2.";
+        return 'The result of the product B2.';
     }
 
     /**
@@ -194,10 +194,10 @@ function clientCode(factory: AbstractFactory) {
  *
  * RU: Клиентский код может работать с любым конкретным классом фабрики.
  */
-console.log("Client: Testing client code with the first factory type...");
+console.log('Client: Testing client code with the first factory type...');
 clientCode(new ConcreteFactory1());
 
-console.log("");
+console.log('');
 
-console.log("Client: Testing the same client code with the second factory type...");
+console.log('Client: Testing the same client code with the second factory type...');
 clientCode(new ConcreteFactory2());
