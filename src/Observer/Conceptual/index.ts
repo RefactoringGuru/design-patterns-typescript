@@ -23,16 +23,12 @@
  * и то же.
  */
 
+/**
+ * EN: The Subject interface declares a set of methods for managing subscribers.
+ *
+ * RU: Интферфейс издателя объявляет набор методов для управлениями подпискичами.
+ */
 interface Subject {
-    /**
-     * EN: @type {number} For the sake of simplicity, the Subject's state, essential
-     * to all subscribers, is stored in this variable.
-     *
-     * RU: @type {number} Для удобства в этой переменной хранится состояние Издателя,
-     * необходимое всем подписчикам.
-     */
-    state: number;
-
     // EN: Attach an observer to the subject.
     //
     // RU: Присоединяет наблюдателя к издателю.
@@ -49,13 +45,6 @@ interface Subject {
     notify(): void;
 }
 
-interface Observer {
-    // EN: Receive update from subject.
-    //
-    // RU: Получить обновление от субъекта.
-    update(subject: Subject): void;
-}
-
 /**
  * EN: The Subject owns some important state and notifies observers when the
  * state changes.
@@ -64,6 +53,13 @@ interface Observer {
  * его изменениях.
  */
 class ConcreteSubject implements Subject {
+    /**
+     * EN: @type {number} For the sake of simplicity, the Subject's state, essential
+     * to all subscribers, is stored in this variable.
+     *
+     * RU: @type {number} Для удобства в этой переменной хранится состояние Издателя,
+     * необходимое всем подписчикам.
+     */
     public state: number;
 
     /**
@@ -75,6 +71,7 @@ class ConcreteSubject implements Subject {
      * и т.д.)
      */
     private observers: Observer[] = [];
+
     /**
      * EN: The subscription management methods.
      *
@@ -121,6 +118,19 @@ class ConcreteSubject implements Subject {
         console.log(`Subject: My state has just changed to: ${this.state}`);
         this.notify();
     }
+}
+
+/**
+ * EN: The Observer interface declares the update method, used by subjects.
+ *
+ * RU: Интерфейс Наблюдателя объявляет метод уведомления, который издатели
+ * используют для оповещения своих подписчиков.
+ */
+interface Observer {
+    // EN: Receive update from subject.
+    //
+    // RU: Получить обновление от субъекта.
+    update(subject: Subject): void;
 }
 
 /**
