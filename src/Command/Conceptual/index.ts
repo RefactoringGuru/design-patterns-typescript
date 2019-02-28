@@ -1,15 +1,16 @@
 /**
  * EN: Command Design Pattern
  *
- * Intent: Encapsulate a request as an object, thereby letting you parameterize
- * clients with different requests (e.g. queue or log requests) and support
- * undoable operations.
+ * Intent: Turns a request into a stand-alone object that contains all
+ * information about the request. This transformation lets you parameterize
+ * methods with different requests, delay or queue a request's execution, and
+ * support undoable operations.
  *
  * RU: Паттерн Команда
  *
- * Назначение: Инкапсулирует запрос как объект, позволяя тем самым
- * параметризовать клиентов с различными запросами (например, запросами очереди
- * или логирования) и поддерживать отмену операций.
+ * Назначение: Превращает запросы в объекты, позволяя передавать их как
+ * аргументы при вызове методов, ставить запросы в очередь, логировать их, а
+ * также поддерживать отмену операций.
  */
 
 /**

@@ -1,15 +1,15 @@
 /**
  * EN: Flyweight Design Pattern
  *
- * Intent: Use sharing to fit more objects into the available amount of RAM by
- * sharing common parts of the object state among multiple objects, instead of
- * keeping the entire state in each object.
+ * Intent: Lets you fit more objects into the available amount of RAM by sharing
+ * common parts of state between multiple objects, instead of keeping all of the
+ * data in each object.
  *
  * RU: Паттерн Легковес
  *
  * Назначение: Позволяет вместить бóльшее количество объектов в отведённую
  * оперативную память. Легковес экономит память, разделяя общее состояние
- * объектов между ними, вместо хранения одинаковых данных в каждом объекте.
+ * объектов между собой, вместо хранения одинаковых данных в каждом объекте.
  */
 
 /**

@@ -1,14 +1,12 @@
 /**
  * EN: Adapter Design Pattern
  *
- * Intent: Convert the interface of a class into the interface clients expect.
- * Adapter lets classes work together where they otherwise couldn't, due to
- * incompatible interfaces.
+ * Intent: Provides a unified interface that allows objects with incompatible
+ * interfaces to collaborate.
  *
  * RU: Паттерн Адаптер
  *
- * Назначение: Преобразует интерфейс класса в интерфейс, ожидаемый клиентами.
- * Адаптер позволяет классам с несовместимыми интерфейсами работать вместе.
+ * Назначение: Позволяет объектам с несовместимыми интерфейсами работать вместе.
  */
 
 /**

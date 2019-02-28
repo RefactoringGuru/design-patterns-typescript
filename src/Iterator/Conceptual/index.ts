@@ -1,13 +1,13 @@
 /**
  * EN: Iterator Design Pattern
  *
- * Intent: Provide a way to traverse the elements of an aggregate object without
- * exposing its underlying representation.
+ * Intent: Lets you traverse elements of a collection without exposing its
+ * underlying representation (list, stack, tree, etc.).
  *
  * RU: Паттерн Итератор
  *
- * Назначение: Предоставляет возможность обходить элементы составного объекта,
- * не раскрывая его внутреннего представления.
+ * Назначение: Даёт возможность последовательно обходить элементы составных
+ * объектов, не раскрывая их внутреннего представления.
  */
 
 interface Iterator<T> {

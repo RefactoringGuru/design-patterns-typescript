@@ -1,14 +1,12 @@
 /**
  * EN: Visitor Design Pattern
  *
- * Intent: Represent an operation to be performed over elements of an object
- * structure. The Visitor pattern lets you define a new operation without
- * changing the classes of the elements on which it operates.
+ * Intent: Lets you separate algorithms from the objects on which they operate.
  *
  * RU: Паттерн Посетитель
  *
- * Назначение: Позволяет добавлять в программу новые операции, не изменяя классы
- * объектов, над которыми эти операции могут выполняться.
+ * Назначение: Позволяет создавать новые операции, не меняя классы объектов, над
+ * которыми эти операции могут выполняться.
  */
 
 /**

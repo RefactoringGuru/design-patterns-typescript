@@ -1,9 +1,8 @@
 /**
  * EN: Observer Design Pattern
  *
- * Intent: Define a one-to-many dependency between objects so that when one
- * object changes state, all of its dependents are notified and updated
- * automatically.
+ * Intent: Lets you define a subscription mechanism to notify multiple objects
+ * about any events that happen to the object they're observing.
  *
  * Note that there's a lot of different terms with similar meaning associated
  * with this pattern. Just remember that the Subject is also called the
@@ -12,9 +11,8 @@
  *
  * RU: Паттерн Наблюдатель
  *
- * Назначение: Устанавливает между объектами зависимость «один ко многим» таким
- * образом, что когда изменяется состояние одного объекта, все зависимые от него
- * объекты оповещаются и обновляются автоматически.
+ * Назначение: Создаёт механизм подписки, позволяющий одним объектам следить и
+ * реагировать на события, происходящие в других объектах.
  *
  * Обратите внимание, что существует множество различных терминов с похожими
  * значениями, связанных с этим паттерном. Просто помните, что Субъекта также

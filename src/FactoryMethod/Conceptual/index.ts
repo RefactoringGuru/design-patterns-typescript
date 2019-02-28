@@ -1,15 +1,13 @@
 /**
  * EN: Factory Method Design Pattern
  *
- * Intent: Define an interface for creating an object, but let subclasses decide
- * which class to instantiate. Factory Method lets a class defer instantiation
- * to subclasses.
+ * Intent: Provides an interface for creating objects in a superclass, but
+ * allows subclasses to alter the type of objects that will be created.
  *
  * RU: Паттерн Фабричный Метод
  *
- * Назначение: Определяет интерфейс для создания объекта, но позволяет
- * подклассам решать, какого класса создавать экземпляр. Фабричный Метод
- * позволяет классу делегировать создание экземпляра подклассам.
+ * Назначение: Определяет общий интерфейс для создания объектов в суперклассе,
+ * позволяя подклассам изменять тип создаваемых объектов.
  */
 
 /**

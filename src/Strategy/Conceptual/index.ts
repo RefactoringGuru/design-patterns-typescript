@@ -1,15 +1,14 @@
 /**
  * EN: Strategy Design Pattern
  *
- * Intent: Define a family of algorithms, encapsulate each one, and make them
- * interchangeable. Strategy lets the algorithm vary independently from clients
- * that use it.
+ * Intent: Lets you define a family of algorithms, put each of them into a
+ * separate class, and make their objects interchangeable.
  *
  * RU: Паттерн Стратегия
  *
- * Назначение: Определяет семейство алгоритмов, инкапсулирует каждый из них и
- * делает взаимозаменяемыми. Стратегия позволяет изменять алгоритм независимо от
- * клиентов, которые его используют.
+ * Назначение: Определяет семейство схожих алгоритмов и помещает каждый из них в
+ * собственный класс, после чего алгоритмы можно взаимозаменять прямо во время
+ * исполнения программы.
  */
 
 /**

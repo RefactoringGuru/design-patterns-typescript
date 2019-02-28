@@ -1,8 +1,8 @@
 /**
  * EN: Memento Design Pattern
  *
- * Intent: Capture and externalize an object's internal state so that the object
- * can be restored to this state later, without violating encapsulation.
+ * Intent: Lets you save and restore the previous state of an object without
+ * revealing the details of its implementation.
  *
  * RU: Паттерн Снимок
  *

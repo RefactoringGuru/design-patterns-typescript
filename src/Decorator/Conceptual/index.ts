@@ -1,15 +1,13 @@
 /**
  * EN: Decorator Design Pattern
  *
- * Intent: Attach additional responsibilities to an object dynamically.
- * Decorators provide a flexible alternative to subclassing for extending
- * functionality.
+ * Intent: Lets you attach new behaviors to objects by placing these objects
+ * inside special wrapper objects that contain the behaviors.
  *
  * RU: Паттерн Декоратор
  *
- * Назначение: Динамически подключает к объекту дополнительную функциональность.
- * Декораторы предоставляют гибкую альтернативу практике создания подклассов для
- * расширения функциональности.
+ * Назначение: Позволяет динамически добавлять объектам новую функциональность,
+ * оборачивая их в полезные «обёртки».
  */
 
 /**

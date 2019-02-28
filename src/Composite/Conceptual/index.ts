@@ -1,15 +1,13 @@
 /**
  * EN: Composite Design Pattern
  *
- * Intent: Compose objects into tree structures to represent part-whole
- * hierarchies. Composite lets clients treat individual objects and compositions
- * of objects uniformly.
+ * Intent: Lets you compose objects into tree structures and then work with
+ * these structures as if they were individual objects.
  *
  * RU: Паттерн Компоновщик
  *
- * Назначение: Объединяет объекты в древовидные структуры для представления
- * иерархий часть-целое. Компоновщик позволяет клиентам обрабатывать отдельные
- * объекты и группы объектов одинаковым образом.
+ * Назначение: Позволяет сгруппировать объекты в древовидную структуру, а затем
+ * работать с ними так, как будто это единичный объект.
  */
 
 /**

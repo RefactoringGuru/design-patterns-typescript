@@ -1,13 +1,13 @@
 /**
  * EN: Prototype Design Pattern
  *
- * Intent: Produce new objects by copying existing ones without compromising
- * their internal structure.
+ * Intent: Lets you copy existing objects without making your code dependent on
+ * their classes.
  *
  * RU: Паттерн Прототип
  *
- * Назначение: Создаёт новые объекты, копируя существующие без нарушения их
- * внутренней структуры.
+ * Назначение: Позволяет копировать объекты, не вдаваясь в подробности их
+ * реализации.
  */
 
 /**

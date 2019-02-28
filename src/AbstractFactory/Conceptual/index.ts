@@ -1,8 +1,8 @@
 /**
  * EN: Abstract Factory Design Pattern
  *
- * Intent: Provide an interface for creating families of related or dependent
- * objects without specifying their concrete classes.
+ * Intent: Lets you produce families of related objects without specifying their
+ * concrete classes.
  *
  * RU: Паттерн Абстрактная Фабрика
  *

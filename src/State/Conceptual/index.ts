@@ -1,13 +1,13 @@
 /**
  * EN: State Design Pattern
  *
- * Intent: Allow an object to alter its behavior when its internal state
- * changes. The object will appear to change its class.
+ * Intent: Lets an object alter its behavior when its internal state changes. It
+ * appears as if the object changed its class.
  *
  * RU: Паттерн Состояние
  *
- * Назначение: Позволяет объекту менять поведение при изменении его внутреннего
- * состояния. Со стороны может казаться, что объект меняет свой класс.
+ * Назначение: Позволяет объектам менять поведение в зависимости от своего
+ * состояния. Извне создаётся впечатление, что изменился класс объекта.
  */
 
 /**

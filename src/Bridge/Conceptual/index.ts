@@ -1,8 +1,9 @@
 /**
  * EN: Bridge Design Pattern
  *
- * Intent: Decouple an abstraction from its implementation so that the two can
- * vary independently.
+ * Intent: Lets you split a large class or a set of closely related classes into
+ * two separate hierarchies—abstraction and implementation—which can be
+ * developed independently of each other.
  *
  *               A
  *            /     \                        A         N
@@ -12,8 +13,8 @@
  *
  * RU: Паттерн Мост
  *
- * Назначение: Разделяет абстракцию и реализацию, что позволяет изменять их
- * независимо друг от друга.
+ * Назначение: Разделяет один или несколько классов на две отдельные иерархии —
+ * абстракцию и реализацию, позволяя изменять их независимо друг от друга.
  *
  *               A
  *            /     \                        A         N

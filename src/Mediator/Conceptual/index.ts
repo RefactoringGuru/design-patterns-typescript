@@ -1,16 +1,14 @@
 /**
  * EN: Mediator Design Pattern
  *
- * Intent: Define an object that encapsulates how a set of objects interact.
- * Mediator promotes loose coupling by keeping objects from referring to each
- * other explicitly, and it lets you vary their interaction independently.
+ * Intent: Lets you reduce chaotic dependencies between objects. The pattern
+ * restricts direct communications between the objects and forces them to
+ * collaborate only via a mediator object.
  *
  * RU: Паттерн Посредник
  *
- * Назначение: Определяет объект, который инкапсулирует взаимодействие набора
- * объектов. Посредник способствует слабой связанности, удерживая объекты от
- * обращения друг к другу напрямую, и это позволяет вам менять их взаимодействие
- * независимо.
+ * Назначение: Позволяет уменьшить связанность множества классов между собой,
+ * благодаря перемещению этих связей в один класс-посредник.
  */
 
 /**
