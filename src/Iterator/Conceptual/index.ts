@@ -56,13 +56,13 @@ class AlphabeticalOrderIterator implements Iterator<string> {
     private collection: WordsCollection;
 
     /**
-     * EN: Stores the current traversal position. An iterator may have
-     * a lot of other fields for storing iteration state, especially when it is
-     * supposed to work with a particular kind of collection.
+     * EN: Stores the current traversal position. An iterator may have a lot of
+     * other fields for storing iteration state, especially when it is supposed
+     * to work with a particular kind of collection.
      *
-     * RU: Хранит текущее положение обхода. У итератора может быть
-     * множество других полей для хранения состояния итерации, особенно когда он
-     * должен работать с определённым типом коллекции.
+     * RU: Хранит текущее положение обхода. У итератора может быть множество
+     * других полей для хранения состояния итерации, особенно когда он должен
+     * работать с определённым типом коллекции.
      */
     private position: number = 0;
 

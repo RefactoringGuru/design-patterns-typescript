@@ -15,8 +15,8 @@
  * different abstract products. These products are called a family and are
  * related by a high-level theme or concept. Products of one family are usually
  * able to collaborate among themselves. A family of products may have several
- * variants, but the products of one variant are incompatible with products
- * of another.
+ * variants, but the products of one variant are incompatible with products of
+ * another.
  *
  * RU: Интерфейс Абстрактной Фабрики объявляет набор методов, которые возвращают
  * различные абстрактные продукты. Эти продукты называются семейством и связаны
@@ -32,9 +32,9 @@ interface AbstractFactory {
 
 /**
  * EN: Concrete Factories produce a family of products that belong to a single
- * variant. The factory guarantees that resulting products are compatible.
- * Note that signatures of the Concrete Factory's methods return an abstract
- * product, while inside the method a concrete product is instantiated.
+ * variant. The factory guarantees that resulting products are compatible. Note
+ * that signatures of the Concrete Factory's methods return an abstract product,
+ * while inside the method a concrete product is instantiated.
  *
  * RU: Конкретная Фабрика производит семейство продуктов одной вариации. Фабрика
  * гарантирует совместимость полученных продуктов. Обратите внимание, что
@@ -95,9 +95,9 @@ class ConcreteProductA2 implements AbstractProductA {
 }
 
 /**
- * EN: Here's the the base interface of another product. All products can interact with
- * each other, but proper interaction is possible only between products of the
- * same concrete variant.
+ * EN: Here's the the base interface of another product. All products can
+ * interact with each other, but proper interaction is possible only between
+ * products of the same concrete variant.
  *
  * RU: Базовый интерфейс другого продукта. Все продукты могут взаимодействовать
  * друг с другом, но правильное взаимодействие возможно только между продуктами
@@ -114,13 +114,13 @@ interface AbstractProductB {
     /**
      * EN: ...but it also can collaborate with the ProductA.
      *
-     * The Abstract Factory makes sure that all products it creates are of
-     * the same variant and thus, compatible.
+     * The Abstract Factory makes sure that all products it creates are of the
+     * same variant and thus, compatible.
      *
      * RU: ...а также взаимодействовать с Продуктами Б той же вариации.
      *
-     * Абстрактная Фабрика гарантирует, что все продукты, которые она
-     * создает, имеют одинаковую вариацию и, следовательно, совместимы.
+     * Абстрактная Фабрика гарантирует, что все продукты, которые она создает,
+     * имеют одинаковую вариацию и, следовательно, совместимы.
      */
     anotherUsefulFunctionB(collaborator: AbstractProductA): string;
 }

@@ -13,20 +13,21 @@
  * RU: Паттерн Наблюдатель
  *
  * Назначение: Устанавливает между объектами зависимость «один ко многим» таким
- * образом, что когда изменяется состояние одного объекта, все зависимые от
- * него объекты оповещаются и обновляются автоматически.
+ * образом, что когда изменяется состояние одного объекта, все зависимые от него
+ * объекты оповещаются и обновляются автоматически.
  *
  * Обратите внимание, что существует множество различных терминов с похожими
  * значениями, связанных с этим паттерном. Просто помните, что Субъекта также
  * называют Издателем, а Наблюдателя часто называют Подписчиком и наоборот.
- * Также глаголы «наблюдать», «слушать» или «отслеживать» обычно означают одно
- * и то же.
+ * Также глаголы «наблюдать», «слушать» или «отслеживать» обычно означают одно и
+ * то же.
  */
 
 /**
  * EN: The Subject interface declares a set of methods for managing subscribers.
  *
- * RU: Интферфейс издателя объявляет набор методов для управлениями подпискичами.
+ * RU: Интферфейс издателя объявляет набор методов для управлениями
+ * подпискичами.
  */
 interface Subject {
     // EN: Attach an observer to the subject.
@@ -54,21 +55,22 @@ interface Subject {
  */
 class ConcreteSubject implements Subject {
     /**
-     * EN: @type {number} For the sake of simplicity, the Subject's state, essential
-     * to all subscribers, is stored in this variable.
+     * EN: @type {number} For the sake of simplicity, the Subject's state,
+     * essential to all subscribers, is stored in this variable.
      *
-     * RU: @type {number} Для удобства в этой переменной хранится состояние Издателя,
-     * необходимое всем подписчикам.
+     * RU: @type {number} Для удобства в этой переменной хранится состояние
+     * Издателя, необходимое всем подписчикам.
      */
     public state: number;
 
     /**
-     * EN: @type {Observer[]} List of subscribers. In real life, the list of subscribers
-     * can be stored more comprehensively (categorized by event type, etc.).
+     * EN: @type {Observer[]} List of subscribers. In real life, the list of
+     * subscribers can be stored more comprehensively (categorized by event
+     * type, etc.).
      *
-     * RU: @type {Observer[]} Список подписчиков. В реальной жизни список подписчиков
-     * может храниться в более подробном виде (классифицируется по типу события
-     * и т.д.)
+     * RU: @type {Observer[]} Список подписчиков. В реальной жизни список
+     * подписчиков может храниться в более подробном виде (классифицируется по
+     * типу события и т.д.)
      */
     private observers: Observer[] = [];
 

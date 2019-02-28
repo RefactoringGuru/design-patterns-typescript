@@ -22,11 +22,10 @@
  */
 class Originator {
     /**
-     * EN: For the sake of simplicity, the originator's state is
-     * stored inside a single variable.
+     * EN: For the sake of simplicity, the originator's state is stored inside a
+     * single variable.
      *
-     * RU: Для удобства состояние создателя хранится внутри одной
-     * переменной.
+     * RU: Для удобства состояние создателя хранится внутри одной переменной.
      */
     private state: string;
 

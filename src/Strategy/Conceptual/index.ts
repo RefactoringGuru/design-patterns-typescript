@@ -23,9 +23,9 @@ class Context {
      * Strategy objects. The Context does not know the concrete class of a
      * strategy. It should work with all strategies via the Strategy interface.
      *
-     * RU: @type {Strategy} Контекст хранит ссылку на один из объектов Стратегии.
-     * Контекст не знает конкретного класса стратегии. Он должен работать со
-     * всеми стратегиями через интерфейс Стратегии.
+     * RU: @type {Strategy} Контекст хранит ссылку на один из объектов
+     * Стратегии. Контекст не знает конкретного класса стратегии. Он должен
+     * работать со всеми стратегиями через интерфейс Стратегии.
      */
     private strategy: Strategy;
 
