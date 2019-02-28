@@ -78,7 +78,7 @@ interface Implementation {
  * EN: Each Concrete Implementation corresponds to a specific platform and
  * implements the Implementation interface using that platform's API.
  *
- * RU: Каждая Конкретная Реализация соответствует определённой платформе  и
+ * RU: Каждая Конкретная Реализация соответствует определённой платформе и
  * реализует интерфейс Реализации с использованием API этой платформы.
  */
 class ConcreteImplementationA implements Implementation {
@@ -100,8 +100,8 @@ class ConcreteImplementationB implements Implementation {
  * abstraction-implementation combination.
  *
  * RU: За исключением этапа инициализации, когда объект Абстракции связывается с
- * определённым объектом Реализации, клиентский код должен зависеть  только от
- * класса Абстракции. Таким образом, клиентский код может поддерживать  любую
+ * определённым объектом Реализации, клиентский код должен зависеть только от
+ * класса Абстракции. Таким образом, клиентский код может поддерживать любую
  * комбинацию абстракции и реализации.
  */
 function clientCode(abstraction: Abstraction) {

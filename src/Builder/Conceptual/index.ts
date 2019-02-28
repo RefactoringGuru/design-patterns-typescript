@@ -7,7 +7,7 @@
  * RU: Паттерн Строитель
  *
  * Назначение: Отделяет построение сложного объекта от его
- * представления так,  что один и тот же процесс построения может создавать
+ * представления так, что один и тот же процесс построения может создавать
  * разные представления объекта.
  */
 
@@ -74,9 +74,7 @@ class ConcreteBuilder1 implements Builder {
      * retrieving results. That's because various types of builders may create
      * entirely different products that don't follow the same interface.
      * Therefore, such methods cannot be declared in the base Builder interface
-     * (at least in a statically typed programming language). Note that PHP is a
-     * dynamically typed language and this method CAN be in the base interface.
-     * However, we won't declare it there for the sake of clarity.
+     * (at least in a statically typed programming language).
      *
      * Usually, after returning the end result to the client, a builder instance
      * is expected to be ready to start producing another product. That's why
@@ -119,7 +117,7 @@ class ConcreteBuilder1 implements Builder {
  *
  * В отличие от других порождающих паттернов, различные конкретные строители
  * могут производить несвязанные продукты. Другими словами, результаты различных
- * строителей  могут не всегда  следовать одному и тому же интерфейсу.
+ * строителей могут не всегда следовать одному и тому же интерфейсу.
  */
 class Product1 {
     public parts: string[] = [];
@@ -180,7 +178,7 @@ class Director {
  * builder object.
  *
  * RU: Клиентский код создаёт объект-строитель, передаёт его директору, а затем
- * инициирует  процесс построения. Конечный результат извлекается из
+ * инициирует процесс построения. Конечный результат извлекается из
  * объекта-строителя.
  */
 function clientCode(director: Director) {
