@@ -87,7 +87,6 @@ class ConcreteSubject implements Subject {
         if (observerIndex === -1) {
             return console.log('Subject: Nonexistent observer.');
         }
-        
         this.observers.splice(observerIndex, 1);
         console.log('Subject: Detached an observer.');
     }
