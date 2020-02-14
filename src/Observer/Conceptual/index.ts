@@ -82,7 +82,7 @@ class ConcreteSubject implements Subject {
         if (isExist) {
             return console.log('Subject: Observer has been attached already.');
         }
-        
+
         console.log('Subject: Attached an observer.');
         this.observers.push(observer);
     }
