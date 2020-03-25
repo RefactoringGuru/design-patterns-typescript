@@ -78,6 +78,11 @@ class ConcreteSubject implements Subject {
      * RU: Методы управления подпиской.
      */
     public attach(observer: Observer): void {
+        const isExist = this.observers.includes(observer);
+        if (isExist) {
+            return console.log('Subject: Observer has been attached already.');
+        }
+
         console.log('Subject: Attached an observer.');
         this.observers.push(observer);
     }
