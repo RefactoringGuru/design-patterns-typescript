@@ -78,9 +78,9 @@ interface AbstractProductA {
 }
 
 /**
- * EN: Concrete Products are created by corresponding Concrete Factories.
+ * EN: These Concrete Products are created by corresponding Concrete Factories.
  *
- * RU: Конкретные продукты создаются соответствующими Конкретными Фабриками.
+ * RU: Эти Конкретные Продукты создаются соответствующими Конкретными Фабриками.
  */
 class ConcreteProductA1 implements AbstractProductA {
     public usefulFunctionA(): string {
@@ -126,9 +126,9 @@ interface AbstractProductB {
 }
 
 /**
- * EN: Concrete Products are created by corresponding Concrete Factories.
+ * EN: These Concrete Products are created by corresponding Concrete Factories.
  *
- * RU: Конкретные Продукты создаются соответствующими Конкретными Фабриками.
+ * RU: Эти Конкретные Продукты создаются соответствующими Конкретными Фабриками.
  */
 class ConcreteProductB1 implements AbstractProductB {
 
