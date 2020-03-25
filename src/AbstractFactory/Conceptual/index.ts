@@ -117,7 +117,7 @@ interface AbstractProductB {
      * The Abstract Factory makes sure that all products it creates are of the
      * same variant and thus, compatible.
      *
-     * RU: ...а также взаимодействовать с Продуктами Б той же вариации.
+     * RU: ...а также взаимодействовать с Продуктами A той же вариации.
      *
      * Абстрактная Фабрика гарантирует, что все продукты, которые она создает,
      * имеют одинаковую вариацию и, следовательно, совместимы.
