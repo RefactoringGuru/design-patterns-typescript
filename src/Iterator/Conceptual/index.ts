@@ -14,7 +14,7 @@ interface Iterator<T> {
     // EN: Return the current element.
     //
     // RU: Возврат текущего элемента.
-    current(): any;
+    current(): T;
 
     // EN: Return the current element and move forward to next element.
     //
@@ -88,7 +88,7 @@ class AlphabeticalOrderIterator implements Iterator<string> {
             0;
     }
 
-    public current(): any {
+    public current(): string {
         return this.collection.getItems()[this.position];
     }
 
@@ -96,7 +96,7 @@ class AlphabeticalOrderIterator implements Iterator<string> {
         return this.position;
     }
 
-    public next(): any {
+    public next(): string {
         const item = this.collection.getItems()[this.position];
         this.position += this.reverse ? -1 : 1;
         return item;
