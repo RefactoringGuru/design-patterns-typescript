@@ -25,7 +25,7 @@
  * EN: The Subject interface declares a set of methods for managing subscribers.
  *
  * RU: Интферфейс издателя объявляет набор методов для управлениями
- * подпискичами.
+ * подписчиками.
  */
 interface Subject {
     // EN: Attach an observer to the subject.
