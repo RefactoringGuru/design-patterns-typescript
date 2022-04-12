@@ -1,35 +1,15 @@
 /**
- * EN: Mediator Design Pattern
- *
- * Intent: Lets you reduce chaotic dependencies between objects. The pattern
- * restricts direct communications between the objects and forces them to
- * collaborate only via a mediator object.
- *
- * RU: Паттерн Посредник
- *
- * Назначение: Позволяет уменьшить связанность множества классов между собой,
- * благодаря перемещению этих связей в один класс-посредник.
- */
-
-/**
- * EN: The Mediator interface declares a method used by components to notify the
+ * The Mediator interface declares a method used by components to notify the
  * mediator about various events. The Mediator may react to these events and
  * pass the execution to other components.
- *
- * RU: Интерфейс Посредника предоставляет метод, используемый компонентами для
- * уведомления посредника о различных событиях. Посредник может реагировать на
- * эти события и передавать исполнение другим компонентам.
  */
-interface Mediator {
+ interface Mediator {
     notify(sender: object, event: string): void;
 }
 
 /**
- * EN: Concrete Mediators implement cooperative behavior by coordinating several
+ * Concrete Mediators implement cooperative behavior by coordinating several
  * components.
- *
- * RU: Конкретные Посредники реализуют совместное поведение, координируя
- * отдельные компоненты.
  */
 class ConcreteMediator implements Mediator {
     private component1: Component1;
@@ -58,17 +38,14 @@ class ConcreteMediator implements Mediator {
 }
 
 /**
- * EN: The Base Component provides the basic functionality of storing a
- * mediator's instance inside component objects.
- *
- * RU: Базовый Компонент обеспечивает базовую функциональность хранения
- * экземпляра посредника внутри объектов компонентов.
+ * The Base Component provides the basic functionality of storing a mediator's
+ * instance inside component objects.
  */
 class BaseComponent {
     protected mediator: Mediator;
 
-    constructor(mediator: Mediator = null) {
-        this.mediator = mediator;
+    constructor(mediator?: Mediator) {
+        this.mediator = mediator!;
     }
 
     public setMediator(mediator: Mediator): void {
@@ -77,12 +54,8 @@ class BaseComponent {
 }
 
 /**
- * EN: Concrete Components implement various functionality. They don't depend on
+ * Concrete Components implement various functionality. They don't depend on
  * other components. They also don't depend on any concrete mediator classes.
- *
- * RU: Конкретные Компоненты реализуют различную функциональность. Они не
- * зависят от других компонентов. Они также не зависят от каких-либо конкретных
- * классов посредников.
  */
 class Component1 extends BaseComponent {
     public doA(): void {
@@ -109,9 +82,7 @@ class Component2 extends BaseComponent {
 }
 
 /**
- * EN: The client code.
- *
- * RU: Клиентский код.
+ * The client code.
  */
 const c1 = new Component1();
 const c2 = new Component2();
