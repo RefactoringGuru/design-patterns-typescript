@@ -17,8 +17,8 @@
  * RU: Базовый класс Компонент объявляет общие операции как для простых, так и
  * для сложных объектов структуры.
  */
-abstract class Component {
-    protected parent: Component;
+ abstract class Component {
+    protected parent!: Component;
 
     /**
      * EN: Optionally, the base Component can declare an interface for setting
@@ -30,8 +30,10 @@ abstract class Component {
      * также может предоставить некоторую реализацию по умолчанию для этих
      * методов.
      */
-    public setParent(parent: Component) {
-        this.parent = parent;
+    public setParent(parent: Component | null) {
+        if(parent != null){
+            this.parent = parent;
+        }
     }
 
     public getParent(): Component {
@@ -172,9 +174,9 @@ function clientCode(component: Component) {
  * RU: Таким образом, клиентский код может поддерживать простые
  * компоненты-листья...
  */
-const simple = new Leaf();
+const simpleLeaf = new Leaf();
 console.log('Client: I\'ve got a simple component:');
-clientCode(simple);
+clientCode(simpleLeaf);
 console.log('');
 
 /**
@@ -215,4 +217,4 @@ function clientCode2(component1: Component, component2: Component) {
 }
 
 console.log('Client: I don\'t need to check the components classes even when managing the tree:');
-clientCode2(tree, simple);
+clientCode2(tree, simpleLeaf);
