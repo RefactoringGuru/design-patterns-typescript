@@ -67,8 +67,8 @@ class ConcreteMediator implements Mediator {
 class BaseComponent {
     protected mediator: Mediator;
 
-    constructor(mediator: Mediator = null) {
-        this.mediator = mediator;
+    constructor(mediator?: Mediator) {
+        this.mediator = mediator!;
     }
 
     public setMediator(mediator: Mediator): void {
