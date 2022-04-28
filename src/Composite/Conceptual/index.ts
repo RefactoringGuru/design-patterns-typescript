@@ -18,7 +18,7 @@
  * для сложных объектов структуры.
  */
 abstract class Component {
-    protected parent: Component;
+    protected parent!: Component | null;
 
     /**
      * EN: Optionally, the base Component can declare an interface for setting
@@ -30,11 +30,11 @@ abstract class Component {
      * также может предоставить некоторую реализацию по умолчанию для этих
      * методов.
      */
-    public setParent(parent: Component) {
+    public setParent(parent: Component | null) {
         this.parent = parent;
     }
 
-    public getParent(): Component {
+    public getParent(): Component | null {
         return this.parent;
     }
 
