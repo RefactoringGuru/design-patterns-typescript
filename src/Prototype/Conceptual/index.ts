@@ -3,7 +3,11 @@
  *
  * Intent: Lets you copy existing objects without making your code dependent on
  * their classes.
+ * 
+ * PT-BR: Padrão de Projeto: Protótipo
  *
+ * Objetivo: Permite que você copie um objeto existente sem que seu código dependa da classe do objeto.
+ * 
  * RU: Паттерн Прототип
  *
  * Назначение: Позволяет копировать объекты, не вдаваясь в подробности их
@@ -13,6 +17,9 @@
 /**
  * EN: The example class that has cloning ability. We'll see how the values of
  * field with different types will be cloned.
+ *
+ * PT-BR: O exemplo de classe que possui a habilidade de clonagem. Nós veremos como
+ * os valores dos atributos de diferentes tipos seram clonados.
  *
  * RU: Пример класса, имеющего возможность клонирования. Мы посмотрим как
  * происходит клонирование значений полей разных типов.
@@ -31,6 +38,12 @@ class Prototype {
         // requires special treatment. After the cloning is completed, the
         // nested object should point to the cloned object, instead of the
         // original object. Spread operator can be handy for this case.
+        //
+        // PT-BR: Clonando um objeto que posssui objetos aninhados com 
+        // referência inversa requer uma atenção especial. Depois que
+        // a clonagem estiver completa, os objetos aninhados devem
+        // apontar para o objeto clonado, ao invés do original. O operador
+        // de espalhamento pode ser muito útil neste caso.
         //
         // RU: Клонирование объекта, который имеет вложенный объект с обратной
         // ссылкой, требует специального подхода. После завершения клонирования
@@ -56,6 +69,8 @@ class ComponentWithBackReference {
 
 /**
  * EN: The client code.
+ *
+ * PT-BR: Código do cliente
  *
  * RU: Клиентский код.
  */
