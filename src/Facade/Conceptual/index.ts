@@ -36,7 +36,7 @@ class Facade {
      * предоставить Фасаду существующие объекты подсистемы или заставить Фасад
      * создать их самостоятельно.
      */
-    constructor(subsystem1: Subsystem1 = null, subsystem2: Subsystem2 = null) {
+    constructor(subsystem1?: Subsystem1, subsystem2?: Subsystem2) {
         this.subsystem1 = subsystem1 || new Subsystem1();
         this.subsystem2 = subsystem2 || new Subsystem2();
     }
