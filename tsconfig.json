@@ -4,5 +4,8 @@
     ],
     "exclude": [
         "node_modules"
-    ]
+    ],
+    "compilerOptions": {
+        "target": "es2015"
+    },
 }

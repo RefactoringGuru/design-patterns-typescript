@@ -1,0 +1,11 @@
+11/07/2022,john@example.com
+11/07/2022,mark@example.com
+11/07/2022,eric@example.com
+12/07/2022,irine@example.com
+12/07/2022,frank@example.com
+13/07/2022,francis@example.com
+15/07/2022,nathan@example.com
+15/07/2022,bob@example.com
+15/07/2022,christine@example.com
+16/07/2022,bobby@example.com
+16/07/2022,ethan@example.com
