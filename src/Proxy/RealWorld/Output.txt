@@ -1,0 +1,16 @@
+Client: Executing the client code with a real weather service:
+The weather forecast is 4.539002575927763º average temperature and 54.50427119342287% max precipitation probability.
+The weather forecast is 12.87183981383º average temperature and 60.041907992745514% max precipitation probability.
+The weather forecast is 27.63639710822103º average temperature and 2.2777239912981972% max precipitation probability.
+
+Client: Executing the same client code with a proxied weather service:
+Requesting forecast on date 2023-06-01T07:45:08.143Z.
+Invalid cache. Calling real weather service...
+Request processed in 1002 milliseconds
+The weather forecast is 27.65024492643842º average temperature and 46.87027596334876% max precipitation probability.
+Requesting forecast on date 2023-06-01T07:45:09.146Z.
+Request processed in 0 milliseconds
+The weather forecast is 27.65024492643842º average temperature and 46.87027596334876% max precipitation probability.
+Requesting forecast on date 2023-06-01T07:45:09.147Z.
+Request processed in 0 milliseconds
+The weather forecast is 27.65024492643842º average temperature and 46.87027596334876% max precipitation probability.
