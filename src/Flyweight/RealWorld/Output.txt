@@ -1,0 +1,19 @@
+Initially the application takes:
+    178MB of rss
+    111MB of heapTotal
+    86MB of heapUsed
+    3MB of external
+    1MB of arrayBuffers
+After creating 6500 vehicles the application takes:
+    201MB of rss
+    136MB of heapTotal
+    104MB of heapUsed
+    3MB of external
+    1MB of arrayBuffers
+Lets create some vehicles flyweights directly to see what happens
+After creating 100 flyweights finally the application takes:
+    1122MB of rss
+    1055MB of heapTotal
+    1019MB of heapUsed
+    3MB of external
+    1MB of arrayBuffers
