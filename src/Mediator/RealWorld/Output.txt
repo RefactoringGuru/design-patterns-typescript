@@ -1,0 +1,12 @@
+Subscribing Lightning
+Subscribing Doc
+Subscribing Mater
+Publishing message "Catchaw" to the group
+Message received by Doc: Catchaw
+Message received by Mater: Catchaw
+Publishing message "Ey kid" to the group
+Message received by Lightning: Ey kid
+Message received by Mater: Ey kid
+Publishing message "Tomato" to the group
+Message received by Lightning: Tomato
+Message received by Doc: Tomato
