@@ -1,0 +1,29 @@
+Client: Creating employee originator and caretaker...
+
+Client: Let's change states saving state before each change...
+Employee caretaker: Saving employee's state...
+Employee caretaker: Saving employee's state...
+Employee caretaker: Saving employee's state...
+
+Client: This is the history of mementos and the state of the originator:
+date=2023-07-17, salary=50000, limit=0
+date=2023-07-17, salary=60000, limit=0
+date=2023-07-17, salary=60000, limit=100
+Employee: State for Justin Case is salary=100000 and monthlyExpensesLimit=100
+
+Client: Changed state up to 3 times, let's rollback to the initial state!
+Employee caretaker: Restoring memento: date=2023-07-17, salary=60000, limit=100
+Originator: Restored state from memento: date=2023-07-17, salary=60000, limit=100
+Employee: State for Justin Case is salary=60000 and monthlyExpensesLimit=100
+Employee caretaker: Restoring memento: date=2023-07-17, salary=60000, limit=0
+Originator: Restored state from memento: date=2023-07-17, salary=60000, limit=0
+Employee: State for Justin Case is salary=60000 and monthlyExpensesLimit=0
+Employee caretaker: Restoring memento: date=2023-07-17, salary=50000, limit=0
+Originator: Restored state from memento: date=2023-07-17, salary=50000, limit=0
+Employee: State for Justin Case is salary=50000 and monthlyExpensesLimit=0
+
+Client: Now the history of mementos should be empty
+Empty employee mementos list
+
+Client: A new undo will leave the employee untouched
+Employee: State for Justin Case is salary=50000 and monthlyExpensesLimit=0
