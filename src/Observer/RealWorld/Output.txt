@@ -1,0 +1,10 @@
+Added a new listener to the 'removeListener' event
+Added a new listener to the 'volumeUp' event
+Added a new listener to the 'volumeDown' event
+Volume up, now the volume value is 55
+Volume down, now the volume value is 50
+Volume up, now the volume value is 55
+Volume down, now the volume value is 50
+Removed a listener of the volumeDown event from the list
+Volume up, now the volume value is 55
+Volume up, now the volume value is 55
