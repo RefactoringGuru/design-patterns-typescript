@@ -1,0 +1,22 @@
+Context: Transition to InitialReadyState.
+You should insert coins before selecting the product
+Credit is now 10
+Context: Transition to TransactionStarted.
+You are trying to buy a product with price 15 but your credit is only 10
+Credit is now 15
+Product Soda dispensed. Inventory is now: [
+  { product: { name: 'Nuts', value: 25 }, items: 0 },
+  { product: { name: 'Soda', value: 15 }, items: 1 }
+]
+Credit has been reset
+Context: Transition to InitialReadyState.
+Credit is now 10
+Context: Transition to TransactionStarted.
+Credit is now 15
+Product Soda dispensed. Inventory is now: [
+  { product: { name: 'Nuts', value: 25 }, items: 0 },
+  { product: { name: 'Soda', value: 15 }, items: 0 }
+]
+Credit has been reset
+Context: Transition to OutOfStock.
+Stop inserting coins, we completely run out of stock
