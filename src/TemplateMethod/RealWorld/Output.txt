@@ -1,0 +1,27 @@
+Formatting in HTML
+
+<h1>ACME S.L. Invoice</h1>
+</hr>
+<div id='customer'>Customer: Amazon Spain, id: amazon-spain</div>
+<ul>
+  <li>Nuts, units=3, amount=15€</li>
+  <li>Still water, units=10, amount=20€</li>
+  <li>Sandwich, units=1, amount=10€</li></ul>
+<div>Taxes: 9.45€</div>
+Total: 54.45€
+<footer>Center Avenue, 42, Rockland  -  2023</footer>
+
+
+
+Formatting in Markdown
+
+#ACME S.L. Invoice
+---
+Customer: **Amazon Spain**, id: amazon-spain
+*Nuts, units=3, amount=15€
+*Still water, units=10, amount=20€
+*Sandwich, units=1, amount=10€
+Taxes: 9.45€
+**Total**: 54.45€
+Center Avenue, 42, Rockland  -  2023
+---
