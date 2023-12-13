@@ -19,7 +19,7 @@ export abstract class DBConnectionFactory {
  * EN: Concrete factories, each of them produces a concrete connection
  */
 export class MongoConnectionFactory extends DBConnectionFactory {
-    public createDBConnection() {
+    public createDBConnection(): DBConnection {
         return new MongoConnection();
     }
 }
