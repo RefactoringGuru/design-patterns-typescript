@@ -11,10 +11,10 @@
  */
 
 /**
- * EN: The Singleton class defines the `getInstance` method that lets clients
+ * EN: The Singleton class defines an `instance` getter, that lets clients
  * access the unique singleton instance.
  *
- * RU: Класс Одиночка предоставляет метод getInstance, который позволяет
+ * RU: Класс Одиночка определяет геттер `instance`, который позволяет
  * клиентам получить доступ к уникальному экземпляру одиночки.
  */
 class Singleton {
@@ -30,17 +30,17 @@ class Singleton {
     private constructor() { }
 
     /**
-     * EN: The static method that controls the access to the singleton instance.
+     * EN: The static getter that controls access to the singleton instance.
      *
      * This implementation let you subclass the Singleton class while keeping
      * just one instance of each subclass around.
      *
-     * RU: Статический метод, управляющий доступом к экземпляру одиночки.
+     * RU: Статический геттер, управляющий доступом к экземпляру одиночки.
      *
      * Эта реализация позволяет вам расширять класс Одиночки, сохраняя повсюду
      * только один экземпляр каждого подкласса.
      */
-    public static getInstance(): Singleton {
+    public static get instance(): Singleton {
         if (!Singleton.#instance) {
             Singleton.#instance = new Singleton();
         }
@@ -66,8 +66,8 @@ class Singleton {
  * RU: Клиентский код.
  */
 function clientCode() {
-    const s1 = Singleton.getInstance();
-    const s2 = Singleton.getInstance();
+    const s1 = Singleton.instance;
+    const s2 = Singleton.instance;
 
     if (s1 === s2) {
         console.log('Singleton works, both variables contain the same instance.');
