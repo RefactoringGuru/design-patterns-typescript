@@ -5,7 +5,7 @@ Here's a style guide which might help you to keep your changes consistent with t
 
 1. All code should follow these two guidelines: [Unofficial TypeScript StyleGuide](https://github.com/basarat/typescript-book/blob/master/docs/styleguide/styleguide.md) and [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript).
 
-2. Try to hard wrap the code at 80th's character. It helps to list the code on the website without scrollbars.
+2. Try to hard wrap the code at 80th character. It helps to list the code on the website without horizontal scrollbars.
 
 3. Example files should be located and named in the following manner:
 
@@ -29,4 +29,4 @@ Here's a style guide which might help you to keep your changes consistent with t
      */
     ```
 
-    This notation helps to keep the code in one place while allowing the website to generates separate versions of examples for all listed languages. Don't be scared and ignore the non-English part of such comments. If you want to change something in a comment like this, just do it. Even if you do it wrong, we'll tell you how to fix it during the Pull Request.
+    This notation helps to keep the code in one place while allowing the website to generate separate versions of examples for all listed languages. Don't be scared and ignore the non-English part of such comments. If you want to change something in a comment like this, just do it. Even if you do it wrong, we'll tell you how to fix it during the review of your Pull Request.
