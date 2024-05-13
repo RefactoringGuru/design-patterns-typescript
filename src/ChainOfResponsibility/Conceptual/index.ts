@@ -19,10 +19,10 @@
  * RU: Интерфейс Обработчика объявляет метод построения цепочки обработчиков. Он
  * также объявляет метод для выполнения запроса.
  */
-interface Handler {
-    setNext(handler: Handler): Handler;
+interface Handler<Request = string, Result = string> {
+    setNext(handler: Handler<Request, Result>): Handler<Request, Result>;
 
-    handle(request: string): string;
+    handle(request: Request): Result;
 }
 
 /**
