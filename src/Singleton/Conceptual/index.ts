@@ -32,8 +32,8 @@ class Singleton {
     /**
      * EN: The static method that controls the access to the singleton instance.
      *
-     * This implementation let you subclass the Singleton class while keeping
-     * just one instance of each subclass around.
+     * This implementation allows you to extend the Singleton class while
+     * keeping just one instance of each subclass around.
      *
      * RU: Статический метод, управляющий доступом к экземпляру одиночки.
      *
