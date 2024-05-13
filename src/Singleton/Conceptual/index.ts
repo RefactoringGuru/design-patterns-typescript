@@ -49,10 +49,10 @@ class Singleton {
     }
 
     /**
-     * EN: Finally, any singleton should define some business logic, which can
+     * EN: Finally, any singleton can define some business logic, which can
      * be executed on its instance.
      *
-     * RU: Наконец, любой одиночка должен содержать некоторую бизнес-логику,
+     * RU: Наконец, любой одиночка может содержать некоторую бизнес-логику,
      * которая может быть выполнена на его экземпляре.
      */
     public someBusinessLogic() {
