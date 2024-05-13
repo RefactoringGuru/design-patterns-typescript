@@ -6,7 +6,7 @@ It contains TypeScript examples for all classic GoF design patterns. Each patter
 
 - [x] **Conceptual** examples show the internal structure of patterns, including detailed comments.
 
-- [x] **RealWorld** examples show how patterns can be used in real-world web applications.
+- [ ] **RealWorld** examples show how patterns can be used in real-world web applications.
 
 ## Requirements
 
