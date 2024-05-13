@@ -74,3 +74,5 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-NoDeriv
 ## Credits
 
 Authors: Alexey Pyltsyn ([@lex111](https://github.com/lex111)) and Alexander Shvets ([@neochief](https://github.com/neochief))
+
+Contributors: [See the list of contributors](https://github.com/RefactoringGuru/design-patterns-typescript/graphs/contributors)
