@@ -32,8 +32,8 @@ class Singleton {
     /**
      * EN: The static getter that controls access to the singleton instance.
      *
-     * This implementation let you subclass the Singleton class while keeping
-     * just one instance of each subclass around.
+     * This implementation allows you to extend the Singleton class while
+     * keeping just one instance of each subclass around.
      *
      * RU: Статический геттер, управляющий доступом к экземпляру одиночки.
      *
@@ -49,10 +49,10 @@ class Singleton {
     }
 
     /**
-     * EN: Finally, any singleton should define some business logic, which can
+     * EN: Finally, any singleton can define some business logic, which can
      * be executed on its instance.
      *
-     * RU: Наконец, любой одиночка должен содержать некоторую бизнес-логику,
+     * RU: Наконец, любой одиночка может содержать некоторую бизнес-логику,
      * которая может быть выполнена на его экземпляре.
      */
     public someBusinessLogic() {
@@ -70,7 +70,9 @@ function clientCode() {
     const s2 = Singleton.instance;
 
     if (s1 === s2) {
-        console.log('Singleton works, both variables contain the same instance.');
+        console.log(
+            'Singleton works, both variables contain the same instance.'
+        );
     } else {
         console.log('Singleton failed, variables contain different instances.');
     }
