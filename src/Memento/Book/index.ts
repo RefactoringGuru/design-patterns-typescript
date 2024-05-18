@@ -1,65 +1,64 @@
 export interface Memento {
-  getName(): string;
-  getSnapshotDate(): Date;
-  getText(): string;
+    getName(): string;
+    getSnapshotDate(): Date;
 }
 
 class Editor {
-  private text: string;
+    private text: string;
 
-  constructor(private name: string) {
-    this.text = "";
-  }
+    constructor(private name: string) {
+        this.text = '';
+    }
 
-  makeSnapshot(): Memento {
-    return new Snapshot(this.name, this.text);
-  }
+    makeSnapshot(): Memento {
+        return new Snapshot(this.name, this.text);
+    }
 
-  restore(memento: Memento) {
-    this.text = memento.getText();
-  }
+    restore(memento: Memento) {
+        this.text = (memento as Snapshot).getText();
+    }
 
-  editText(newText: string) {
-    this.text = newText;
-  }
+    editText(newText: string) {
+        this.text = newText;
+    }
 
-  displayText() {
-    console.log("Current Text: " + this.text);
-  }
+    displayText() {
+        console.log(`Current Text: ${this.text}`);
+    }
 }
 
 class Snapshot implements Memento {
-  private name: string;
-  private text: string;
-  private date: Date;
+    private name: string;
+    private text: string;
+    private date: Date;
 
-  constructor(name: string, text: string) {
-    this.name = name;
-    this.text = text;
-    this.date = new Date();
-  }
+    constructor(name: string, text: string) {
+        this.name = name;
+        this.text = text;
+        this.date = new Date();
+    }
 
-  getName(): string {
-    return this.name;
-  }
+    getName(): string {
+        return this.name;
+    }
 
-  getSnapshotDate(): Date {
-    return this.date;
-  }
+    getSnapshotDate(): Date {
+        return this.date;
+    }
 
-  getText(): string {
-    return this.text;
-  }
+    getText(): string {
+        return this.text;
+    }
 }
 
-const editor = new Editor("Document 1");
+const editor = new Editor('Document 1');
 
-editor.editText("This is the initial text");
+editor.editText('This is the initial text');
 editor.displayText();
 
 const snapshot1 = editor.makeSnapshot();
 
-editor.editText("Text after editing");
+editor.editText('Text after editing');
 editor.displayText();
 
 editor.restore(snapshot1);
