@@ -73,7 +73,7 @@ class Originator {
      * RU: Восстанавливает состояние Создателя из объекта снимка.
      */
     public restore(memento: Memento): void {
-        this.state = memento.getState();
+        this.state = (memento as ConcreteMemento).getState();
         console.log(`Originator: My state has changed to: ${this.state}`);
     }
 }
@@ -87,10 +87,7 @@ class Originator {
  * как дата создания или название. Однако он не раскрывает состояние Создателя.
  */
 interface Memento {
-    getState(): string;
-
     getName(): string;
-
     getDate(): string;
 }
 
@@ -103,7 +100,6 @@ interface Memento {
  */
 class ConcreteMemento implements Memento {
     private state: string;
-
     private date: string;
 
     constructor(state: string) {

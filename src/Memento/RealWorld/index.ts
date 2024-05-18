@@ -8,7 +8,11 @@
  */
 const DEFAULT_MONTHLY_EXPENSES_LIMIT = 0;
 
-class EmployeeOriginator {
+interface Originator {
+    saveSnapshot: () => Memento;
+}
+
+class EmployeeOriginator implements Originator {
     private _name: string;
     private _salary: number;
     private _monthlyExpensesLimit: number;
@@ -33,17 +37,17 @@ class EmployeeOriginator {
         this._monthlyExpensesLimit = newLimit;
     }
 
-    public saveSnapshot(): Memento<EmployeeState> {
-        return new EmployeeMemento({
+    public saveSnapshot(): Memento {
+        return new EmployeeMemento(this,{
             salary: this._salary,
             monthlyExpensesLimit: this._monthlyExpensesLimit,
         });
     }
 
-    public restore(memento: Memento<EmployeeState>): void {
-        this._salary = memento.state.salary;
-        this._monthlyExpensesLimit = memento.state.monthlyExpensesLimit;
-        console.log(`Originator: Restored state from memento: ${memento.name}`);
+    public setState(mementoName: string, state: EmployeeState): void {
+        this._salary = state.salary;
+        this._monthlyExpensesLimit = state.monthlyExpensesLimit;
+        console.log(`Originator: Restored state from memento: ${mementoName}`);
     }
 
     public showState(): void {
@@ -58,10 +62,10 @@ class EmployeeOriginator {
  * monthlyExpensesLimit in the memento constructor and moving the restore
  * method to the memento class instead of the originator
  */
-interface Memento<T> {
-    readonly state: T;
+interface Memento {
     readonly name: string;
     readonly date: Date;
+    readonly restore: () => void;
 }
 
 /**
@@ -73,12 +77,14 @@ interface EmployeeState {
     monthlyExpensesLimit: number;
 }
 
-class EmployeeMemento implements Memento<EmployeeState> {
+class EmployeeMemento implements Memento {
     private _state: EmployeeState;
     private _date: Date;
     private _name: string;
+    private _originator: EmployeeOriginator;
 
-    constructor(state: EmployeeState) {
+    constructor(originator: EmployeeOriginator, state: EmployeeState) {
+        this._originator = originator;
         this._state = state;
         this._date = new Date();
         this._name = `date=${this._date.toISOString().substring(0, 10)}, \
@@ -89,14 +95,17 @@ ${this._state.monthlyExpensesLimit}`;
     get state() { return this._state; }
     get name() { return this._name; }
     get date() { return this._date; }
+
+    public restore(): void {
+        this._originator.setState(this._name, this._state);
+    }
 }
 
 /**
  * EN: The Caretaker doesn't need to access the state of the originator.
  */
 class EmployeeCaretaker {
-    private _employeeMementos: Memento<EmployeeState>[] = [];
-
+    private _employeeMementos: Memento[] = [];
     private _employee: EmployeeOriginator;
 
     constructor(employee: EmployeeOriginator) {
@@ -115,7 +124,7 @@ class EmployeeCaretaker {
         const employeeMementoToRestore = this._employeeMementos.pop();
 
         console.log(`Employee caretaker: Restoring memento: ${employeeMementoToRestore.name}`);
-        this._employee.restore(employeeMementoToRestore);
+        employeeMementoToRestore.restore();
     }
 
     public showHistory(): void {
