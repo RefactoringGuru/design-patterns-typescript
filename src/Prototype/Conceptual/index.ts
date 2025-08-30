@@ -37,10 +37,7 @@ class Prototype {
         // вложенный объект должен указывать на клонированный объект, а не на
         // исходный объект. Для данного случая хорошо подойдёт оператор
         // расширения (spread).
-        clone.circularReference = {
-            ...this.circularReference,
-            prototype: { ...this },
-        };
+        clone.circularReference = new ComponentWithBackReference(clone);
 
         return clone;
     }
